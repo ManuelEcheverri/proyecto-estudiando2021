@@ -8,18 +8,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.com.edu.apiestudiante2021.model.Persona;
-import co.com.edu.apiestudiante2021.servicio.persona.creacion.CreacionPersonaService;
+import co.com.edu.apiestudiante2021.model.Estudiante;
+import co.com.edu.apiestudiante2021.servicio.estudiante.creacion.CreacionEstudianteService;
 
 
 @RestController
-@RequestMapping("/v1/persona")
-public class ControladorComandoPersona {
+@RequestMapping("/v1/estudiante")
+public class ControladorComandoEstudiante {
 	@Autowired
-	private CreacionPersonaService creacionPersonaService;
+	private CreacionEstudianteService creacionEstudianteService;
 
 	@PostMapping
-	public void insertar(@RequestBody Persona persona) {
-		creacionPersonaService.ejecutar(persona);
+	public void insertar(@RequestBody Estudiante estudiante) {
+		creacionEstudianteService.ejecutar(estudiante);
 	}
 }
