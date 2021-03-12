@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import co.com.edu.apiestudiante2021.model.TipoDocumento;
 import co.com.edu.apiestudiante2021.servicio.tipodocumento.consulta.ConsultaTipoDocumentoService;
-
+import io.swagger.annotations.Api;
+@Api(tags= "Consulta los diferentes tipos de documento de identidad")
 @RestController
 @RequestMapping("/v1/tipo-documento")
 public class ControladorTipoDocumento {

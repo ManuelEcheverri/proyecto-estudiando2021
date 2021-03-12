@@ -15,7 +15,7 @@ import co.com.edu.apiestudiante2021.servicio.estudiante.consulta.ConsultaEstudia
 
 @RestController
 @RequestMapping("/v1/estudiante")
-@CrossOrigin(origins = "*", methods = { RequestMethod.GET })
+@CrossOrigin(origins = "*", methods= {RequestMethod.GET})
 public class ControladorConsultaEstudiante {
 
 	@Autowired
@@ -26,8 +26,8 @@ public class ControladorConsultaEstudiante {
 		return estudianteService.findAll();
 	}
 
-	@GetMapping("/{idPersona}")
-	public Estudiante findById(@PathVariable("idPersona") Integer idEstudiante) {
+	@GetMapping("/{idEstudiante}")
+	public Estudiante findById(@PathVariable("idEstudiante") Integer idEstudiante) {
 		return estudianteService.findById(idEstudiante);
 	}
 

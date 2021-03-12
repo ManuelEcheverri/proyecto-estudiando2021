@@ -13,9 +13,9 @@ public class CreacionEstudianteServiceImpl implements CreacionEstudianteService 
 	private EstudianteRepository estudianteRepository;
 
 	@Override
-	public void ejecutar(Estudiante estudiante) {
+	public Integer ejecutar(Estudiante estudiante) {
 		estudianteRepository.save(estudiante);
-
+		return estudiante.getIdEstudiante();
 	}
 
 }

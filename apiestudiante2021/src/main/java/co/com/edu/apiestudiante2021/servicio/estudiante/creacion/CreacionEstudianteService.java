@@ -4,6 +4,6 @@ import co.com.edu.apiestudiante2021.model.Estudiante;
 
 public interface CreacionEstudianteService {
 
-	void ejecutar(Estudiante estudiante);
+	Integer ejecutar(Estudiante estudiante);
 
 }
