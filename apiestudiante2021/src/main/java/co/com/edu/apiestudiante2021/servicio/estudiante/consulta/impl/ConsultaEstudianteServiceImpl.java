@@ -23,4 +23,6 @@ public class ConsultaEstudianteServiceImpl implements ConsultaEstudianteService 
 	public Estudiante findById(Integer idEstudiante) {
 		return estudianteRepository.findById(idEstudiante).orElse(null);
 	}
+
+	
 }

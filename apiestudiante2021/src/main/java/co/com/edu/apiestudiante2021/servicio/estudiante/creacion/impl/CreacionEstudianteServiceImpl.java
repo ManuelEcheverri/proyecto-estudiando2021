@@ -9,6 +9,7 @@ import co.com.edu.apiestudiante2021.servicio.estudiante.creacion.CreacionEstudia
 
 @Service
 public class CreacionEstudianteServiceImpl implements CreacionEstudianteService {
+
 	@Autowired
 	private EstudianteRepository estudianteRepository;
 

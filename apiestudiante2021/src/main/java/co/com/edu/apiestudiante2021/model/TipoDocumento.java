@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class TipoDocumento {
+	
 	@Id
 	@Column(name = "idtipodocumento")
 	private Integer idTipoDocumento;

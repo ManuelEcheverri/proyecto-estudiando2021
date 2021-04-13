@@ -12,7 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import co.com.edu.apiestudiante2021.model.Estudiante;
 import co.com.edu.apiestudiante2021.servicio.estudiante.consulta.ConsultaEstudianteService;
+import io.swagger.annotations.Api;
 
+@Api(tags="Consultar estudiante")
 @RestController
 @RequestMapping("/v1/estudiante")
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET})
@@ -27,7 +29,7 @@ public class ControladorConsultaEstudiante {
 	}
 
 	@GetMapping("/{idEstudiante}")
-	public Estudiante findById(@PathVariable("idEstudiante") Integer idEstudiante) {
+	Estudiante findById(@PathVariable("idEstudiante") Integer idEstudiante) {
 		return estudianteService.findById(idEstudiante);
 	}
 

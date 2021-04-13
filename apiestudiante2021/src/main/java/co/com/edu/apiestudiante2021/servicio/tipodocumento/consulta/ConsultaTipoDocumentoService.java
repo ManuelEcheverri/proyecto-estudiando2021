@@ -6,6 +6,4 @@ public interface ConsultaTipoDocumentoService {
 
 	Iterable<TipoDocumento> findAll();
 
-	
-
 }

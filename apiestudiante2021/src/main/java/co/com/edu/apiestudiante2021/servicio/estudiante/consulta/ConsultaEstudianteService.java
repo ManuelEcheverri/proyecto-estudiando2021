@@ -9,5 +9,7 @@ public interface ConsultaEstudianteService {
 	Iterable<Estudiante> findAll();
 
 	Estudiante findById(Integer idEstudiante);
+	
+	
 
 }
