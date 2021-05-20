@@ -55,11 +55,10 @@ public class EstudianteConverter {
 		return estudiante;
 	}
 
-	public Estudiante borrar(EstudianteDTO estudianteDTO) {
+	public Estudiante eliminar(Integer idEstudiante) {
+		ValidadorArgumento.validarPositivo(idEstudiante, EL_ID_ESTUDIANTE_ES_OBLIGATORIO);
 		Estudiante estudiante = new Estudiante();
-		ValidadorArgumento.validarObligatorio(estudianteDTO.getIdTipoDocumento(),
-				EL_TIPO_DE_DOCUMENTO_DEL_ESTUDIANTE_ES_OBLIGATORIO);
-		estudiante.setIdEstudiante(estudianteDTO.getIdTipoDocumento());
+		estudiante.setIdEstudiante(idEstudiante);
 		return estudiante;
 	}
 

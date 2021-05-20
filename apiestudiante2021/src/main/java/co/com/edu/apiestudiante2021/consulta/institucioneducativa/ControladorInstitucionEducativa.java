@@ -11,10 +11,9 @@ import co.com.edu.apiestudiante2021.model.InstitucionEducativa;
 import co.com.edu.apiestudiante2021.servicio.institucioneducativa.consulta.ConsultaInstitucionEducativaService;
 import io.swagger.annotations.Api;
 
-@Api(tags = "Consulta los diferentes tipos de Institucion educativa")
+
 @RestController
 @RequestMapping("/v1/instituciones-educativas")
-@CrossOrigin(origins = "*", methods = { RequestMethod.GET })
 public class ControladorInstitucionEducativa {
 	@Autowired
 	private ConsultaInstitucionEducativaService consultaInstitucionEducativaService;
